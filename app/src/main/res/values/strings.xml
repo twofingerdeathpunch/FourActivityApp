@@ -3,4 +3,7 @@
     <string name="log_in">Log In</string>
     <string name="password">password</string>
     <string name="username">Username</string>
+    <string name="edit">Edit</string>
+    <string name="faves">Faves</string>
+    <string name="log_out">Log Out</string>
 </resources>
