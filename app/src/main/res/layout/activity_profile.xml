@@ -6,48 +6,125 @@
     android:layout_height="match_parent"
     tools:context=".Profile">
 
-    <android.support.constraint.Barrier
-        android:id="@+id/barrier"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/ProfileText2"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        app:constraint_referenced_ids="logout_button, edit_button, faves_button"
+        android:text="ProfileText2 - I have been to Y"
+        app:layout_constraintBottom_toTopOf="@+id/ProfileText3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="731dp" />
+        app:layout_constraintTop_toBottomOf="@+id/ProfileText1" />
+
+    <TextView
+        android:id="@+id/ProfileText4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="ProfileText4 - I like listening to and watching E"
+        app:layout_constraintBottom_toTopOf="@+id/logout_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileText3" />
+
+    <TextView
+        android:id="@+id/ProfileText3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="ProfileText3 - I want to go to Z"
+        app:layout_constraintBottom_toTopOf="@+id/ProfileText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileText2" />
 
     <Button
         android:id="@+id/logout_button"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundedbuttons"
+        android:text="@string/log_out"
+        android:textColor="@color/colorFourText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/edit_button"
-        tools:layout_editor_absoluteY="678dp"
-        android:text="@string/log_out"
-        android:background="@drawable/roundedbuttons"/>
+        app:layout_constraintTop_toBottomOf="@+id/ProfileText4" />
 
     <Button
         android:id="@+id/edit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundedbuttons"
+        android:text="@string/edit"
+        android:textColor="@color/colorFourText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/logout_button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/faves_button"
-        tools:layout_editor_absoluteY="678dp"
-        android:text="@string/edit"
-        android:background="@drawable/roundedbuttons"/>
+        app:layout_constraintTop_toBottomOf="@+id/ProfileText4" />
 
     <Button
         android:id="@+id/faves_button"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundedbuttons"
+        android:text="@string/faves"
+        android:textColor="@color/colorFourText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/edit_button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="678dp"
-        android:text="@string/faves"
-        android:background="@drawable/roundedbuttons"/>
+        app:layout_constraintTop_toBottomOf="@+id/ProfileText4" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="231dp"
+        android:layout_height="245dp"
+        app:layout_constraintBottom_toTopOf="@+id/ProfileText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars[10]" />
+
+    <TextView
+        android:id="@+id/ProfileText1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="ProfileText1 -- I like X"
+        app:layout_constraintBottom_toTopOf="@+id/ProfileText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 </android.support.constraint.ConstraintLayout>
