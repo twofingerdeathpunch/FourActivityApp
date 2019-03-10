@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -53,5 +54,10 @@ public class Profile extends AppCompatActivity {
                 break;
         }
         startActivity(intent);
+    }
+    @OnClick(R.id.logout_button)
+    public void clickSubmit() {
+        Toast.makeText(this, "Finishing...", Toast.LENGTH_SHORT).show();
+        finish();
     }
 }

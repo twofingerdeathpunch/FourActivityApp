@@ -6,26 +6,13 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextProfile6"
+        android:id="@+id/editTextProfile8"
         android:layout_width="322dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextProfile9" />
-
-    <EditText
-        android:id="@+id/editTextProfile9"
-        android:layout_width="322dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextProfile6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,14 +25,14 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextProfile9"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfile8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextProfile8" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfile6" />
 
     <EditText
-        android:id="@+id/editTextProfile8"
+        android:id="@+id/editTextProfile6"
         android:layout_width="322dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -55,23 +42,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextProfile2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfile5" />
 
     <EditText
-        android:id="@+id/editTextProfile1"
+        android:id="@+id/editTextProfile5"
         android:layout_width="322dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextProfile"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfile6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfile4" />
 
     <EditText
-        android:id="@+id/editTextProfile"
+        android:id="@+id/editTextProfile4"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfile5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfile3" />
+
+    <EditText
+        android:id="@+id/editTextProfile1"
         android:layout_width="322dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -81,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextProfile1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextProfile2"
@@ -90,25 +90,39 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextProfile8"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfile3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextProfile" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfile1" />
+
+    <EditText
+        android:id="@+id/editTextProfile3"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfile4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfile2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonsubmit"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/roundedbuttons"
-        android:text="Button"
+        android:text="Submit"
         android:textColor="@color/colorFourText"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline4"
@@ -144,4 +158,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="395dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="652dp" />
 </android.support.constraint.ConstraintLayout>
