@@ -7,44 +7,80 @@
     tools:context=".Profile">
 
     <TextView
-        android:id="@+id/ProfileText2"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="ProfileText2 - I have been to Y"
-        app:layout_constraintBottom_toTopOf="@+id/ProfileText3"
+        android:id="@+id/profileViewMyTravel"
+        android:layout_width="348dp"
+        android:layout_height="20dp"
+        android:text="@string/profile2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProfileText2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProfileText1" />
 
     <TextView
-        android:id="@+id/ProfileText4"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="ProfileText4 - I like listening to and watching E"
-        app:layout_constraintBottom_toTopOf="@+id/logout_button"
+        android:id="@+id/profileViewMyWatches"
+        android:layout_width="348dp"
+        android:layout_height="20dp"
+        android:text="@string/profile4"
+        android:textAlignment="viewStart"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProfileText4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProfileText3" />
 
     <TextView
-        android:id="@+id/ProfileText3"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="ProfileText3 - I want to go to Z"
-        app:layout_constraintBottom_toTopOf="@+id/ProfileText4"
+        android:id="@+id/profileViewMyDestination"
+        android:layout_width="348dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/profile3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProfileText3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ProfileText2" />
+
+    <TextView
+        android:id="@+id/ProfileText2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/profileViewMyDestination"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileViewMyTravel" />
+
+    <TextView
+        android:id="@+id/ProfileText4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/logout_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileViewMyWatches" />
+
+    <TextView
+        android:id="@+id/ProfileText3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/profileViewMyWatches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileViewMyDestination" />
 
     <Button
         android:id="@+id/logout_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/roundedbuttons"
         android:text="@string/log_out"
         android:textColor="@color/colorFourText"
@@ -59,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/roundedbuttons"
         android:text="@string/edit"
         android:textColor="@color/colorFourText"
@@ -74,7 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/roundedbuttons"
         android:text="@string/faves"
         android:textColor="@color/colorFourText"
@@ -99,12 +135,11 @@
         android:id="@+id/ProfileText1"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="ProfileText1 -- I like X"
-        app:layout_constraintBottom_toTopOf="@+id/ProfileText2"
+        app:layout_constraintBottom_toTopOf="@+id/profileViewMyTravel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/profileViewMyLikes" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -126,5 +161,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/profileViewMyLikes"
+        android:layout_width="348dp"
+        android:layout_height="16dp"
+        android:text="@string/profile1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ProfileText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
 </android.support.constraint.ConstraintLayout>
