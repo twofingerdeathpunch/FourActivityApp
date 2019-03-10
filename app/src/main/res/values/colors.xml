@@ -7,4 +7,7 @@
     <color name="colorFourSecond">#a255ff</color>
     <color name="colorFourExtra">#0100ca</color>
     <color name="colorFourText">#ffffff</color>
+    <color name="androidPrimary">#E91EDD</color>
+    <color name="androidSecondary">#1EE9D1</color>
 </resources>
+
