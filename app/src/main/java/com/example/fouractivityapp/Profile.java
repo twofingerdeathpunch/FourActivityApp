@@ -46,11 +46,11 @@ public class Profile extends AppCompatActivity {
                 break;
             case R.id.edit_button:
                 intent = intent.setClass(this, EditProfile.class);
-                Log.d("Profile -  onClick","Detect button press for faves button");
+                Log.d("Profile -  onClick","Detect button press for edit button");
                 break;
             case R.id.logout_button:
                 intent = intent.setClass(this, MainActivity.class);
-                Log.d("Profile -  onClick","Detect button press for faves button");
+                Log.d("Profile -  onClick","Detect button press for logout button");
                 break;
         }
         startActivity(intent);

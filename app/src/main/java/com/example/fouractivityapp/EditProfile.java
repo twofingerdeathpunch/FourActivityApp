@@ -27,7 +27,7 @@ public class EditProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_profile);
+        setContentView(R.layout.edit_profile_and_faves);
         ButterKnife.bind(EditProfile.this);
         Log.d("editProfile", "In onCreate method in EditProfile activity");
     }
