@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">FourActivityApp</string>
-    <string name="log_in">Log In</string>
-    <string name="password">password</string>
-    <string name="username">Username</string>
-    <string name="edit">Edit</string>
-    <string name="faves">Faves</string>
-    <string name="log_out">Log Out</string>
+    <string name="app_name" translatable="false">FourActivityApp</string>
+    <string name="log_in" translatable="false">Log In</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="edit" translatable="false">Edit</string>
+    <string name="faves" translatable="false">Faves</string>
+    <string name="log_out" translatable="false">Log Out</string>
 </resources>

@@ -6,4 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".EditProfile">
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/favesLayoutTopLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/favesLayoutTopRight"
+        app:layout_constraintBottom_toTopOf="@+id/favesLayoutBottomLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/favesLayoutTopRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/favesLayoutTopLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/favesLayoutBottomRight"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/favesLayoutBottomLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/favesLayoutBottomRight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favesLayoutTopLeft" />
+
+    <FrameLayout
+        android:id="@+id/favesLayoutBottomRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/favesLayoutBottomLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favesLayoutTopRight" >
+
+    </FrameLayout>
+    </android.support.constraint.ConstraintLayout>

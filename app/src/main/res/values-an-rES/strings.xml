@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FourActivityApp</string>
+    <string name="log_in" translatable="false">"Iniciar "</string>
+    <string name="log_out" translatable="false">"Cerrar "</string>
+    <string name="faves" translatable="false">Favoritos</string>
+    <string name="edit" translatable="false">Editar</string>
+    <string name="username" translatable="false">Nombre de usuario</string>
+    <string name="password" translatable="false">Contraseña</string>
+</resources>

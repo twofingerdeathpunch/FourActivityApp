@@ -26,18 +26,18 @@
         app:layout_constraintStart_toEndOf="@+id/edit_button"
         tools:layout_editor_absoluteY="678dp"
         android:text="@string/log_out"
-        android:background="@color/colorAccent"/>
+        android:background="@drawable/roundedbuttons"/>
 
     <Button
         android:id="@+id/edit_button"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@+id/logout_button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/faves_button"
         tools:layout_editor_absoluteY="678dp"
         android:text="@string/edit"
-        android:background="@color/colorAccent"/>
+        android:background="@drawable/roundedbuttons"/>
 
     <Button
         android:id="@+id/faves_button"
@@ -48,6 +48,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="678dp"
         android:text="@string/faves"
-        android:background="@color/colorAccent"/>
+        android:background="@drawable/roundedbuttons"/>
 
 </android.support.constraint.ConstraintLayout>
