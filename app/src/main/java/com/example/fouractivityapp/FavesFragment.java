@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 public class FavesFragment extends Fragment {
 
+    TextView textView;
+
     public FavesFragment() {
     }
 
@@ -18,7 +20,7 @@ public class FavesFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.faves_fragment, container, false);
-        TextView textView = view.findViewById(R.id.faves_fragment);
+        textView = view.findViewById(R.id.faves_fragment);
         textView.setText("Fragment Works YAY!!!!!!");
         return view;
     }

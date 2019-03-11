@@ -29,8 +29,7 @@ public class Faves extends AppCompatActivity {
     @BindView(R.id.favorite_four)
     Button getFavoriteFourButton;
     @Nullable
-    @BindView(R.id.faves_fragment)
-    TextView favesFragment;
+    FavesFragment favesFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +37,7 @@ public class Faves extends AppCompatActivity {
         setContentView(R.layout.activity_faves);
         Log.d("Faves", "In onCreate method in Faves activity");
         ButterKnife.bind(this);
-        FavesFragment  favesFragment= new FavesFragment();
+        favesFragment= new FavesFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().add(R.id.favesLayoutTopLeftLand, favesFragment).commit();
     }
@@ -48,19 +47,19 @@ public class Faves extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.favorite_one:
                 Log.d("Faves-buttonPress", "Favorite one button pressed");
-//                favesFragment.setText("Button One Pressed");
+                favesFragment.textView.setText("Button One Pressed");
                 break;
             case R.id.favorite_two:
                 Log.d("Faves-buttonPress", "Favorite two button pressed");
-//                favesFragment.setText("Button two Pressed");
+                favesFragment.textView.setText("Button Two Pressed");
                 break;
             case R.id.favorite_three:
                 Log.d("Faves-buttonPress", "Favorite three button pressed");
-//                favesFragment.setText("Button three Pressed");
+                favesFragment.textView.setText("Button Three Pressed");
                 break;
             case R.id.favorite_four:
                 Log.d("Faves-buttonPress", "Favorite four button pressed");
-//                favesFragment.setText("Button four Pressed");
+                favesFragment.textView.setText("Button Four Pressed");
                 break;
 
         }
