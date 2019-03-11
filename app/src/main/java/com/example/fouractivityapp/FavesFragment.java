@@ -21,7 +21,7 @@ public class FavesFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.faves_fragment, container, false);
         textView = view.findViewById(R.id.faves_fragment);
-        textView.setText("Fragment Works YAY!!!!!!");
+//        textView.setText("Fragment Works YAY!!!!!!");
         return view;
     }
 }

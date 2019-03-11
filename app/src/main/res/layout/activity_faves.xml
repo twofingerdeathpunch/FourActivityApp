@@ -10,7 +10,6 @@
         android:layout_width="525dp"
         android:layout_height="395dp"
         android:layout_marginStart="168dp"
-        android:background="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/favorite_three"
