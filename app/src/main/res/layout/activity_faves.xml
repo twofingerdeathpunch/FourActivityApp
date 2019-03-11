@@ -5,4 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <FrameLayout
+        android:id="@+id/favesLayoutTopLeftLand"
+        android:layout_width="525dp"
+        android:layout_height="395dp"
+        android:layout_marginStart="168dp"
+        android:background="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/favorite_three"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/favorite_one"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Favorite One"
+        app:layout_constraintBottom_toTopOf="@+id/favorite_two"
+        app:layout_constraintEnd_toStartOf="@+id/favesLayoutTopLeftLand"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/favorite_two"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Favorite Two"
+        app:layout_constraintBottom_toTopOf="@+id/favorite_three"
+        app:layout_constraintEnd_toStartOf="@+id/favesLayoutTopLeftLand"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_one" />
+
+    <Button
+        android:id="@+id/favorite_three"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Favorite Three"
+        app:layout_constraintBottom_toTopOf="@+id/favorite_four"
+        app:layout_constraintEnd_toStartOf="@+id/favesLayoutTopLeftLand"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_two" />
+
+    <Button
+        android:id="@+id/favorite_four"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Favorite Four"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/favesLayoutTopLeftLand"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_three" />
+
 </android.support.constraint.ConstraintLayout>
