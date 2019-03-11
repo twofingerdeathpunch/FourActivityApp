@@ -45,14 +45,14 @@ public class EditProfile extends AppCompatActivity {
         intent.putExtra("FavoriteText4", MyFourthFavorite.getText().toString());
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = preferences.edit();
-        editor.putString("ProfileText1",MyFirstProfileText.getText().toString());
-        editor.putString("ProfileText2",MySecondProfileText.getText().toString());
-        editor.putString("ProfileText3",MyThirdProfileText.getText().toString());
-        editor.putString("ProfileText4",MyFourthProfileText.getText().toString());
-        editor.putString("FavoriteText1",MyFirstFavorite.getText().toString());
-        editor.putString("FavoriteText2",MySecondFavorite.getText().toString());
-        editor.putString("FavoriteText3",MyThirdFavorite.getText().toString());
-        editor.putString("FavoriteText4",MyFourthFavorite.getText().toString());
+        editor.putString("ProfileText1", MyFirstProfileText.getText().toString());
+        editor.putString("ProfileText2", MySecondProfileText.getText().toString());
+        editor.putString("ProfileText3", MyThirdProfileText.getText().toString());
+        editor.putString("ProfileText4", MyFourthProfileText.getText().toString());
+        editor.putString("FavoriteText1", MyFirstFavorite.getText().toString());
+        editor.putString("FavoriteText2", MySecondFavorite.getText().toString());
+        editor.putString("FavoriteText3", MyThirdFavorite.getText().toString());
+        editor.putString("FavoriteText4", MyFourthFavorite.getText().toString());
         editor.apply();
         startActivity(intent);
     }

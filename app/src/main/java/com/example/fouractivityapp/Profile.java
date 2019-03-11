@@ -1,6 +1,8 @@
 package com.example.fouractivityapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,20 +18,18 @@ public class Profile extends AppCompatActivity {
 
     @BindView(R.id.faves_button)
     Button favesButton;
-
     @BindView(R.id.edit_button)
     Button editButton;
-
     @BindView(R.id.logout_button)
     Button logoutButton;
-
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         ButterKnife.bind(this);
-
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         Log.d("Profile - onCreate", "In the second activity");
     }
 
@@ -58,6 +58,8 @@ public class Profile extends AppCompatActivity {
     @OnClick(R.id.logout_button)
     public void clickSubmit() {
         Toast.makeText(this, "Finishing...", Toast.LENGTH_SHORT).show();
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putBoolean("loggedIn", false).apply();
         finish();
     }
 }
