@@ -130,7 +130,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/android_profile2" />
+        app:srcCompat="@drawable/android_profile2"
+        tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/ProfileText1"

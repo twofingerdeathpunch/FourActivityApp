@@ -8,7 +8,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.gson.Gson;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -22,7 +25,17 @@ public class Profile extends AppCompatActivity {
     Button editButton;
     @BindView(R.id.logout_button)
     Button logoutButton;
+    @BindView(R.id.ProfileText1)
+    TextView textProfile1;
+    @BindView(R.id.ProfileText2)
+    TextView textProfile2;
+    @BindView(R.id.ProfileText3)
+    TextView textProfile3;
+    @BindView(R.id.ProfileText4)
+    TextView textProfile4;
+
     SharedPreferences sharedPreferences;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +44,14 @@ public class Profile extends AppCompatActivity {
         ButterKnife.bind(this);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         Log.d("Profile - onCreate", "In the second activity");
+        if(sharedPreferences.contains("userProfile")) {
+            Gson gson = new Gson();
+            UserProfile userProfile = gson.fromJson(sharedPreferences.getString("userProfile","") , UserProfile.class);
+            textProfile1.setText(userProfile.getLike());
+            textProfile2.setText(userProfile.getBeenTo());
+            textProfile3.setText(userProfile.getWantToGo());
+            textProfile4.setText(userProfile.getInterests());
+        }
     }
 
     @OnClick({R.id.faves_button, R.id.edit_button, R.id.logout_button})

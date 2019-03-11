@@ -8,20 +8,22 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
 
+import com.google.gson.Gson;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class EditProfile extends AppCompatActivity {
 
-    @BindView(R.id.editTextProfile1) EditText MyFirstProfileText;
-    @BindView(R.id.editTextProfile2) EditText MySecondProfileText;
-    @BindView(R.id.editTextProfile3) EditText MyThirdProfileText;
-    @BindView(R.id.editTextProfile4) EditText MyFourthProfileText;
-    @BindView(R.id.editTextProfile5) EditText MyFirstFavorite;
-    @BindView(R.id.editTextProfile6) EditText MySecondFavorite;
-    @BindView(R.id.editTextProfile7) EditText MyThirdFavorite;
-    @BindView(R.id.editTextProfile8) EditText MyFourthFavorite;
+    @BindView(R.id.editTextProfile1) EditText myFirstProfileText;
+    @BindView(R.id.editTextProfile2) EditText mySecondProfileText;
+    @BindView(R.id.editTextProfile3) EditText myThirdProfileText;
+    @BindView(R.id.editTextProfile4) EditText myFourthProfileText;
+    @BindView(R.id.editTextProfile5) EditText myFirstFavorite;
+    @BindView(R.id.editTextProfile6) EditText mySecondFavorite;
+    @BindView(R.id.editTextProfile7) EditText myThirdFavorite;
+    @BindView(R.id.editTextProfile8) EditText myFourthFavorite;
 
 
     @Override
@@ -34,26 +36,16 @@ public class EditProfile extends AppCompatActivity {
 
     @OnClick(R.id.buttonsubmit)
     public void clickSubmit(){
+        UserProfile tempProfile = new UserProfile("Name", myFirstProfileText.getText().toString(),
+                mySecondProfileText.getText().toString(), myThirdProfileText.getText().toString(),
+                myFourthProfileText.getText().toString(), myFirstFavorite.getText().toString(),
+                mySecondFavorite.getText().toString(), myThirdFavorite.getText().toString(), myFourthFavorite.getText().toString());
         Intent intent =new Intent(EditProfile.this, Profile.class);
-        intent.putExtra("ProfileText1", MyFirstProfileText.getText().toString());
-        intent.putExtra("ProfileText2", MySecondProfileText.getText().toString());
-        intent.putExtra("ProfileText3", MyThirdProfileText.getText().toString());
-        intent.putExtra("ProfileText4", MyFourthProfileText.getText().toString());
-        intent.putExtra("FavoriteText1", MyFirstFavorite.getText().toString());
-        intent.putExtra("FavoriteText2", MySecondFavorite.getText().toString());
-        intent.putExtra("FavoriteText3", MyThirdFavorite.getText().toString());
-        intent.putExtra("FavoriteText4", MyFourthFavorite.getText().toString());
+        Gson gson = new Gson();
+        String json = gson.toJson(tempProfile);
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = preferences.edit();
-        editor.putString("ProfileText1", MyFirstProfileText.getText().toString());
-        editor.putString("ProfileText2", MySecondProfileText.getText().toString());
-        editor.putString("ProfileText3", MyThirdProfileText.getText().toString());
-        editor.putString("ProfileText4", MyFourthProfileText.getText().toString());
-        editor.putString("FavoriteText1", MyFirstFavorite.getText().toString());
-        editor.putString("FavoriteText2", MySecondFavorite.getText().toString());
-        editor.putString("FavoriteText3", MyThirdFavorite.getText().toString());
-        editor.putString("FavoriteText4", MyFourthFavorite.getText().toString());
-        editor.apply();
+        editor.putString("userProfile", json).apply();
         startActivity(intent);
     }
 
