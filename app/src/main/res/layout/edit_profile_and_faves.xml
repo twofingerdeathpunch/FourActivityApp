@@ -12,7 +12,8 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/faves4"
-        app:layout_constraintBottom_toTopOf="@+id/buttonsubmit"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +26,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/faves3"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextProfile8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -38,6 +40,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/faves2"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextProfile7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -51,6 +54,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/faves1"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextProfile6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -60,10 +64,11 @@
     <EditText
         android:id="@+id/editTextProfile4"
         android:layout_width="322dp"
-        android:layout_height="wrap_content"
+        android:layout_height="39dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/profile4"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextProfile5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -77,11 +82,12 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/profile1"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextProfile2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline6" />
+        app:layout_constraintTop_toBottomOf="@+id/guideline6" />
 
     <EditText
         android:id="@+id/editTextProfile2"
@@ -90,6 +96,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/profile2"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextProfile3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -103,6 +110,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/profile3"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextProfile4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -113,15 +121,16 @@
         android:id="@+id/buttonsubmit"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
         android:background="@drawable/roundedbuttons"
         android:text="Submit"
         android:textColor="@color/colorFourText"
-        app:layout_constraintBottom_toBottomOf="@id/guideline11"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/guideline7" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline4"
@@ -135,7 +144,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="301dp" />
+        app:layout_constraintGuide_begin="439dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline6"
@@ -149,21 +158,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="575dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="395dp" />
+        app:layout_constraintGuide_begin="496dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="652dp" />
+        app:layout_constraintGuide_begin="570dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline11"
