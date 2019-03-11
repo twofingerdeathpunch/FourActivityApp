@@ -44,19 +44,23 @@ public class Faves extends AppCompatActivity {
     }
 
     @OnClick({R.id.favorite_one, R.id.favorite_two, R.id.favorite_three, R.id.favorite_four})
-    public void buttonPress(View view) {
+    public void onClick(View view) {
         switch(view.getId()) {
             case R.id.favorite_one:
-                favesFragment.setText("Button One Pressed");
+                Log.d("Faves-buttonPress", "Favorite one button pressed");
+//                favesFragment.setText("Button One Pressed");
                 break;
             case R.id.favorite_two:
-                favesFragment.setText("Button two Pressed");
+                Log.d("Faves-buttonPress", "Favorite two button pressed");
+//                favesFragment.setText("Button two Pressed");
                 break;
             case R.id.favorite_three:
-                favesFragment.setText("Button three Pressed");
+                Log.d("Faves-buttonPress", "Favorite three button pressed");
+//                favesFragment.setText("Button three Pressed");
                 break;
             case R.id.favorite_four:
-                favesFragment.setText("Button four Pressed");
+                Log.d("Faves-buttonPress", "Favorite four button pressed");
+//                favesFragment.setText("Button four Pressed");
                 break;
 
         }
