@@ -13,51 +13,63 @@
         android:background="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintStart_toEndOf="@+id/favorite_three"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/favorite_one"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Favorite One"
-        app:layout_constraintBottom_toTopOf="@+id/favorite_two"
-        app:layout_constraintEnd_toStartOf="@+id/favesLayoutTopLeftLand"
+        app:layout_constraintBottom_toTopOf="@+id/favorite_three"
+        app:layout_constraintEnd_toStartOf="@+id/favorite_two"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/favesLayoutTopLeftLand" />
 
     <Button
         android:id="@+id/favorite_two"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Favorite Two"
-        app:layout_constraintBottom_toTopOf="@+id/favorite_three"
-        app:layout_constraintEnd_toStartOf="@+id/favesLayoutTopLeftLand"
+        app:layout_constraintBottom_toTopOf="@+id/favorite_four"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/favorite_one" />
+        app:layout_constraintStart_toEndOf="@+id/favorite_one"
+        app:layout_constraintTop_toBottomOf="@+id/favesLayoutTopLeftLand" />
 
     <Button
         android:id="@+id/favorite_three"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Favorite Three"
-        app:layout_constraintBottom_toTopOf="@+id/favorite_four"
-        app:layout_constraintEnd_toStartOf="@+id/favesLayoutTopLeftLand"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/favorite_four"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/favorite_two" />
+        app:layout_constraintTop_toBottomOf="@+id/favorite_one" />
 
     <Button
         android:id="@+id/favorite_four"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Favorite Four"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/favorite_three"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_two" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/favesLayoutTopLeftLand"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/favorite_three" />

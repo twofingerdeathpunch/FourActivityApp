@@ -1,5 +1,6 @@
 package com.example.fouractivityapp;
 
+import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +31,9 @@ public class Faves extends AppCompatActivity {
     Button getFavoriteFourButton;
     @Nullable
     FavesFragment favesFragment;
+    @Nullable
+    @BindView(R.id.back)
+    Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +46,9 @@ public class Faves extends AppCompatActivity {
         fragmentManager.beginTransaction().add(R.id.favesLayoutTopLeftLand, favesFragment).commit();
     }
 
-    @OnClick({R.id.favorite_one, R.id.favorite_two, R.id.favorite_three, R.id.favorite_four})
+    @OnClick({R.id.favorite_one, R.id.favorite_two, R.id.favorite_three, R.id.favorite_four, R.id.back})
     public void onClick(View view) {
+        Intent intent = new Intent(this, Profile.class);
         switch(view.getId()) {
             case R.id.favorite_one:
                 Log.d("Faves-buttonPress", "Favorite one button pressed");
@@ -61,7 +66,9 @@ public class Faves extends AppCompatActivity {
                 Log.d("Faves-buttonPress", "Favorite four button pressed");
                 favesFragment.textView.setText("Button Four Pressed");
                 break;
-
+            case R.id.back:
+                startActivity(intent);
+                break;
         }
     }
 }
