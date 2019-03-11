@@ -10,5 +10,10 @@
     <string name="profile2" translatable="false">Where I\'ve been:</string>
     <string name="profile3" translatable="false">Where I\'m going:</string>
     <string name="profile4" translatable="false">What I Listen To and Watch:</string>
+    <string name="faves1" translatable="false">My First Favorite</string>
+    <string name="faves2" translatable="false">My Second Favorite</string>
+    <string name="faves3" translatable="false">My Third Favorite</string>
+    <string name="faves4" translatable="false">My Fourth Favorite</string>
+
 </resources>
 

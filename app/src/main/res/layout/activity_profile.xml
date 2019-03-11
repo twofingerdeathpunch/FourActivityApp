@@ -122,14 +122,15 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="231dp"
-        android:layout_height="245dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@android:string/untitled"
         app:layout_constraintBottom_toTopOf="@+id/ProfileText1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/android_profile2" />
+        app:srcCompat="@drawable/android_profile2" />
 
     <TextView
         android:id="@+id/ProfileText1"

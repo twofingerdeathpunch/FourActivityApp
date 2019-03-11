@@ -34,7 +34,7 @@ public class EditProfile extends AppCompatActivity {
 
     @OnClick(R.id.buttonsubmit)
     public void clickSubmit(){
-        Intent intent =new Intent(EditProfile.this, MainActivity.class);
+        Intent intent =new Intent(EditProfile.this, Profile.class);
         intent.putExtra("ProfileText1", MyFirstProfileText.getText().toString());
         intent.putExtra("ProfileText2", MySecondProfileText.getText().toString());
         intent.putExtra("ProfileText3", MyThirdProfileText.getText().toString());
